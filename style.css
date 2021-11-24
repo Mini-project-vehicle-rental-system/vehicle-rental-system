@@ -95,7 +95,7 @@ header{
     width: 100%;
     min-height:100vh;
     position: relative;
-    background-image: url('img/logo2.png');
+    background-image: url('images/logo2.png');
     background-repeat: no-repeat;
     background-position:  right top;
     background-size: cover;
