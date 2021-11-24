@@ -5,80 +5,265 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City-Wheels</title>
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="/phone.css">
-    <link rel="stylesheet" href="/style.css">
+    <title>Car Rental Website</title>
+    <!--link to css-->
+    <link rel="stylesheet" href="style.css">
+    <!--box icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
 </head>
 
 <body>
-    <nav id="navbar">
-        <!-- <div id="logo">
-            <img src="logo.png" alt="MyOnlineMeal.com">
-        </div> -->
-        <ul>
-            <li class="item"><a href="#home">Home</a></li>
-            <li class="item"><a href="login.html">Login/Register</a></li>
-            <li class="item"><a href="#client-section">services</a></li>
-            <li class="item"><a href="#contact">Contact Us</a></li>
+    <!--Header-->
+    <header>
+        <a href="#" class="logo"><img src="img/tt.jpg" alt""></a>
+        <div class="bx- bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ride">Ride</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
         </ul>
-    </nav>
-    <section id="services-container">
-        <h1 class="h-primary center">Choose type of Vehicle</h1>
-        <div id="services">
-            <div class="box">
-                <img src="./images/car-image.jpg" alt="image pending">
-                <h2 class="h-secondary center">Cars</h2>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam,
-                    recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
-                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
-            </div>
-            <div class="box">
-                <img src="./images/bike-image.jpg" alt="image pending">
-                <h2 class="h-secondary center">Bikes</h2>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab
-                    dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+        <div class="header-btn">
+            <a href="register.html" class="sign-up">Sign Up</a>
+            <a href="login.html" class="sign-in">Sign In</a>
+        </div>
+    </header>
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="text">
+            <h1><span>Looking</span>to<br>rent a car</h1>
+            <p>New Bike & Car Images - Not only the autoX gallery brings you the latest car photos and bike photos from
+                our photographers, but we have also compiled new </p>
+            <div class="app-stores">
+                <img src="img/g.jpg" alt="">
 
-                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+        </div>
+        <div class="form-container">
+            <form action="">
+                <div class="input-box">
+                    <span>Location</span>
+                    <input type="search" name="" id="" placeholder="search places">
+                </div>
+                <div class="input-box">
+                    <span>Pick-Up Date</span>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="input-box">
+                    <span>Return Date</span>
+                    <input type="date" name="" id="">
+                </div>
+                <input type="submit" name=" id=" class="btn">
+            </form>
+        </div>
+        </form>
+        </div>
+    </section>
+    <!--Ride-->
+    <section class="ride" id="ride">
+        <div class="heading">
+            <span>How Its Work</span>
+            <h1>Rent With 3 easy step</h1>
+        </div>
+        <div class="ride-container">
+            <div class="box">
+                <i class='bx bxs-map'></i>
+                <h2>Choose A Location</h2>
+                <p>car .form-container form .btn</p>
             </div>
             <div class="box">
-                <img src="./images/cycle-image.jpg" alt="image pending">
-                <h2 class="h-secondary center">Bicycles</h2>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam
-                    minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
-                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+                <i class='bx bxs-calendar-check'></i>
+                <h2>Pick-Up Daate</h2>
+                <p>car .form-container form .btn</p>
+            </div>
+            <div class="box">
+                <i class='bx bxs-calendar-star'></i>
+                <h2>Book A Car</h2>
+                <p>car .form-container form .btn</p>
             </div>
         </div>
     </section>
-    <section id="client-section">
-        <h1 class="h-primary center">Our Clients</h1>
-        <div id="clients">
-            <div class="client-item">
-                <img src="./images/facebook-g34fc16425_640.png" alt="Our Client">
+    <section class="services" id="services">
+        <div class="heading">
+            <span>How its Work</span>
+            <h1>Rent with 3 Easy steps<br> From Top Rated Dealers</h1>
+        </div>
+        <div class="services-container">
+            <div class="box1">
+                <div class="box-img">
+                    <img src="img/image41.jpg" alt="">
+                </div>
+                <p>2016</p>
+                <h3>2018 honda civic</h3>
+                <h2>$58500 | $354 <span>/month</span></h2>
+                <a href="#" class="btn">Rent Now</a>
             </div>
-            <div class="client-item">
-                <img src="./images/linked-in-gfaaf419c8_640.png" alt="Our Client">
+            <div class="box1">
+                <div class="box-img">
+                    <img src="img/page1.png" alt="">
+                </div>
+                <p>2016</p>
+                <h3>2018 honda civic</h3>
+                <h2>$58500 | $354 <span>/month</span></h2>
+                <a href="#" class="btn">Rent Now</a>
             </div>
-
-            <div class="client-item">
-                <img src="./images/microsoft-g873aa8ecc_640.png" alt="Our Client">
+            <div class="box1">
+                <div class="box-img">
+                    <img src="img/page2.png" alt="">
+                </div>
+                <p>2016</p>
+                <h3>2018 honda civic</h3>
+                <h2>$58500 | $354 <span>/month</span></h2>
+                <a href="#" class="btn">Rent Now</a>
             </div>
-            <!-- <div class="client-item">
-                <img src" alt="Our Client">
-            </div> -->
+            <div class="box1">
+                <div class="box-img">
+                    <img src="img/page3.png" alt="">
+                </div>
+                <p>2016</p>
+                <h3>2018 honda civic</h3>
+                <h2>$58500 | $354 <span>/month</span></h2>
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box1">
+                <div class="box-img">
+                    <img src="img/image41.jpg" alt="">
+                </div>
+                <p>2016</p>
+                <h3>2018 honda civic</h3>
+                <h2>$58500 | $354 <span>/month</span></h2>
+                <a href="#" class="btn">Rent Now</a>
+            </div>
         </div>
     </section>
-    <footer>
-        <div class="center">
-            Copyright &copy; www.CityWheels.com. All rights reserved!
+    </section class="about" id="about">
+    <div class="heading">
+        <span>About Us</span>
+        <h1>Best Customer Experience</h1>
+    </div>
+    <div class="about-container">
+        <div class="about-img">
+            <img src="img/image41.jpg" alt="">
         </div>
-    </footer>
+        <div class="about-text">
+            <span>About Us</span>
+            <p>A car (or automobile) is a wheeled motor vehicle used for transportation. Most definitions of cars say
+                that they run primarily on roads, seat one-to-eight people, have four wheels and mainly transport people
+                rather than goods.[2][3]
+
+            </p>
+
+            <p>Cars came into global use during the 20th century, and developed economies depend on them. The year 1886
+                is regarded as the birth year of the car when German inventor Karl Benz patented his Benz
+                Patent-Motorwagen.[1][4][5] Cars became widely available in the early 20th century. One of the first
+                cars accessible to the masses was the 1908 Model T, an American car manufactured by the Ford Motor
+                Company. Cars were rapidly adopted in the US, where they replaced animal-drawn carriages and carts.[6]
+                In Europe and other parts of the world, demand for automobiles did not increase until after World War
+                II.[6]</p>
+            <a href="#" class="btn">Learn more</a>
+        </div>
+    </div>
+    </section>
+    <!--reviews-->
+    <section class="reviews" id="reviews">
+        <div class="heading">
+            <span>reviews</span>
+            <h1>Whats Our Customer Say</h1>
+        </div>
+        <div class="reviews-container">
+            <div class="box">
+                <div class="rev-img">
+                    <img src="img/image41.jpg" alt="">
+
+                </div>
+                <h2>Someone Name</h2>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Cars came into global use during the 20th century, and developed economies depend on them. The year
+                    1886 is regarded as the birth year of the car when German inventor Karl Benz patented his Benz
+                    Patent-Motorwagen.</p>
+            </div>
+            <div class="box">
+                <div class="rev-img">
+                    <img src="img/page1.png" alt="">
+
+                </div>
+                <h2>Someone Name</h2>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Cars came into global use during the 20th century, and developed economies depend on them. The year
+                    1886 is regarded as the birth year of the car when German inventor Karl Benz patented his Benz
+                    Patent-Motorwagen.</p>
+            </div>
+            <div class="box">
+                <div class="rev-img">
+                    <img src="img/page2.png" alt="">
+
+                </div>
+                <h2>Someone Name</h2>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Cars came into global use during the 20th century, and developed economies depend on them. The year
+                    1886 is regarded as the birth year of the car when German inventor Karl Benz patented his Benz
+                    Patent-Motorwagen.</p>
+            </div>
+            <div class="box">
+                <div class="rev-img">
+                    <img src="img/page3.png" alt="">
+
+                </div>
+                <h2>Someone Name</h2>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Cars came into global use during the 20th century, and developed economies depend on them. The year
+                    1886 is regarded as the birth year of the car when German inventor Karl Benz patented his Benz
+                    Patent-Motorwagen.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!--news letter-->
+    <ssection class="newsletter">
+        <h2>Subscribe To Newsletter</h2>
+        <div class="box">
+            <input type="text" placeholder="Enter your Email..">
+            <a href="" class="btn">Subscribe</a>
+        </div>
+    </ssection>
+    <div class="copyright">
+        <p></p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </div>
+
+    <!--link to js-->
+    <script src="main.js"></script>
 </body>
 
 </html>
