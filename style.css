@@ -1,434 +1,269 @@
-/*google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box ;
-    scroll-padding-top: 2rem;
-    scroll-behavior: smooth;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-}
-:root{
-    --main-color-color:#fe5b3d;
-    --second-color:#ffac38;
-    --text-color:#444;
-    --gradiant: linear-gradient(#fe5b3d,#ffac38);
-}
-/* Custom Scroll Bar */
-html::-webkit-scrollbar{
-    width: 0.5rem;
-}
-html::-webkit-scrollbar-track{
-    background: transparent;
+<!DOCTYPE html>
+<html lang="en">
 
-}
-html::-webkit-scrollbar-thumb{
-    background: var(--main-color);
-    border-radius: 5rem;
-}
-section{
-    padding: 50px 100px;
-}
-header{
-    position:fixed;
-    width:100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #eeeff1;
-    padding: 15px 100px;
-}
-.logo img{
-    width: 40px;
-}
-.navbar{
-    display: flex;
-}
-.navbar li{
-    position: relative;
-}
-.navbar a{
-    font-size: 1rem;
-    padding: 10px 20px;
-    color: var(--text-color);
-    font-weight: 500;
-}
-.navbar a::after{
-    content: "";
-    width:0;
-    height:3px;
-    background:var(--gradiant);
-    position: absolute;
-    bottom: -4px;
-    left:0;
-    transition: 0.5s;
-}
-.navbar a:hover::after{
-    width: 100%;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Website</title>
+    <!--link to css-->
+    <link rel="stylesheet" href="style.css">
+    <!--box icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-#menu-icon{
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 10001;
-    display: none;
-}
-.header-btn a{
-    padding: 10px 20px;
-    color: var(--text-color);
-    font-weight: 500;
-}
-.header-btn .sign-in{
-    background: #474fa0;
-    color: #fff;
-    border-radius: 00.5rem;
-}
-.header-btn .sign-in:hover{
-    background: var(--main-color-color);
-}
-.home{
-    width: 100%;
-    min-height:100vh;
-    position: relative;
-    background-image: url('images/logo2.png');
-    background-repeat: no-repeat;
-    background-position:  right top;
-    background-size: cover;
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(2, 1fr);
-}
-.text h1{
-    font-size: 3.5rem;
-    letter-spacing: 2px;
-}
-.text span{
-    color: var(--main-color-color);
-}
-.text p{
-    margin: 00.5rem 0 1rem;
-}
-.app-stores{
-    display: flex;
-}
-.app-stores img{
-    width: 100px;
-    margin-right: 1rem;
-    cursor: pointer;
-}
-.form-container form{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-    position: absolute;
-    bottom: 4rem;
-    left: 100px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 0.5rem;
-}
-.input-box{
-    flex: 1 1 7rem;
-    display: flex;
-    flex-direction: column;
-}
-.input-box span{
-    font-weight: 500;
-}
-.input-box input{
-    padding: 7px;
-    outline: none;
-    border: none;
-    background: #eeeff1;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-}
-.form-container form .btn{
-    flex: 1 1 7rem;
-    padding: 10px 34px;
-    border: none;
-    border-radius: 0.5rem;
-    background: #474fa0;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
+</head>
 
-}
-.form-container form .btn:hover{
-    background: var(--main-color-color);
-}
-.heading{
-    text-align: center;
-}
-.heading span{
-    font-weight: 500;
-    text-transform: uppercase;
-}
-.header h1{
-    font-size: 2rem;
-}
-.ride-container{
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit,minmax(250px, auto));
-    gap: 1rem;
-    margin-top: 2rem;
-}
-.ride-container .box{
-    text-align: center;
-    padding: 20px;
-}
-.ride-container .box .bx{
-    font-size: 34px;
-    padding: 10px;
-    background: #eeeff1;
-    border-radius: 0.5rem;
-    color: var(--main-color-color);
+<body>
+    <!--Header-->
+    <header>
+        <a href="#" class="logo"><img src="images/tt.jpg" alt""></a>
+        <div class="bx- bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ride">Ride</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <div class="header-btn">
+            <a href="register.html" class="sign-up">Sign Up</a>
+            <a href="login.html" class="sign-in">Sign In</a>
+        </div>
+    </header>
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="text">
+            <h1><span>Looking</span>to<br>rent a car</h1>
+            <p>New Bike & Car Images - Not only the autoX gallery brings you the latest car photos and bike photos from
+                our photographers, but we have also compiled new </p>
+            <div class="app-stores">
+                <img src="images/gg.png" alt="">
 
-}
-.ride-container .box h2{
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin: 1.4rem 0 0.5rem;
+            </div>
+        </div>
+        <div class="form-container">
+            <form action="">
+                <div class="input-box">
+                    <span>Location</span>
+                    <input type="search" name="" id="" placeholder="search places">
+                </div>
+                <div class="input-box">
+                    <span>Pick-Up Date</span>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="input-box">
+                    <span>Return Date</span>
+                    <input type="date" name="" id="">
+                </div>
+                <input type="submit" name=" id=" class="btn">
+            </form>
+        </div>
+        </form>
+        </div>
+    </section>
+    <!--Ride-->
+    <section class="ride" id="ride">
+        <div class="heading">
+            <span>How Its Work</span>
+            <h1>Rent With 3 easy step</h1>
+        </div>
+        <div class="ride-container">
+            <div class="box">
+                <i class='bx bxs-map'></i>
+                <h2>Choose A Location</h2>
+                <p>car .form-container form .btn</p>
+            </div>
+            <div class="box">
+                <i class='bx bxs-calendar-check'></i>
+                <h2>Pick-Up Daate</h2>
+                <p>car .form-container form .btn</p>
+            </div>
+            <div class="box">
+                <i class='bx bxs-calendar-star'></i>
+                <h2>Book A Car</h2>
+                <p>car .form-container form .btn</p>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="heading">
+            <span>How its Work</span>
+            <h1>Rent with 3 Easy steps<br> From Top Rated Dealers</h1>
+        </div>
+        <div class="services-container">
+            <div class="box1">
+                <div class="box-img">
+                    <img src="images/image41.jpg" alt="">
+                </div>
+                <p>2016</p>
+                <h3>2018 honda civic</h3>
+                <h2>$58500 | $354 <span>/month</span></h2>
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box1">
+                <div class="box-img">
+                    <img src="images/page1.png" alt="">
+                </div>
+                <p>2016</p>
+                <h3>2018 honda civic</h3>
+                <h2>$58500 | $354 <span>/month</span></h2>
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box1">
+                <div class="box-img">
+                    <img src="images/page2.png" alt="">
+                </div>
+                <p>2016</p>
+                <h3>2018 honda civic</h3>
+                <h2>$58500 | $354 <span>/month</span></h2>
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box1">
+                <div class="box-img">
+                    <img src="images/page3.png" alt="">
+                </div>
+                <p>2016</p>
+                <h3>2018 honda civic</h3>
+                <h2>$58500 | $354 <span>/month</span></h2>
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box1">
+                <div class="box-img">
+                    <img src="images/image41.jpg" alt="">
+                </div>
+                <p>2016</p>
+                <h3>2018 honda civic</h3>
+                <h2>$58500 | $354 <span>/month</span></h2>
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+        </div>
+    </section>
+    </section class="about" id="about">
+    <div class="heading">
+        <span>About Us</span>
+        <h1>Best Customer Experience</h1>
+    </div>
+    <div class="about-container">
+        <div class="about-img">
+            <img src="images/image41.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <p>A car (or automobile) is a wheeled motor vehicle used for transportation. Most definitions of cars say
+                that they run primarily on roads, seat one-to-eight people, have four wheels and mainly transport people
+                rather than goods.[2][3]
 
-}
-.ride-container .box .bx:hover,
-.ride-container .box .bxs-calendar-check{
-    background: var(--second-color);
-    color: #fff;
-}
-.services-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
-    gap:1rem;
-    margin-top: 2rem;
-}
-.services-container .box1{
-    padding: 10px;
-    border-radius: 1rem;
-    box-shadow: 1px 4px 41px rgba(230, 90, 90, 0.1);
-}
-.services-container .box1 .box-img{
-    width: 100%;
-    height: 200px;
-}
-.services-container .box1 .box-img img{
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    object-fit: cover;
-    object-position: center;
-}
-.services-container .box1 p{
-    padding: 0 10px;
-    border: 1px solid var(--main-color-color);
-    width: 58px;
-    border-radius: 0.5rem;
-    margin: 1rem 0 1rem;
-}
-.services-container .box1 h3{
-    font-weight: 500;
-}
-.services-container .box1 h2{
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--main-color-color);
-    margin: 0.2rem 0 0.5rem;
-}
-.services-container .box1 h2 span{
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--main-color-color);
-}
-.services-container .box1 .btn{
-    display: flex;
-    justify-content: center;
-    background: #474fa0;
-    color: #fff;
-    padding: 10px;
-    border-radius: 0.5rem;
-}
-.services-container .box1 .btn:hover{
-    background: var(--main-color-color);
-}
-.about-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 2rem;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-.about-img img{
-    width: 100%;
-}
-.about-text span{
-    font-weight: 500;
-    color: var(--main-color-color);
-    text-transform: uppercase;
-}
-.about-text p{
-    margin:0.5rem 0 1.4rem;
-}
-.about-text .btn{
-    padding: 10px 20px;
-    background: #474fa0;
-    color: #fff;
-    border-radius: 0.5rem;
-}
-.about-text .btn:hover{
-    background: var(--second-color);
-}
+            </p>
 
-.reviews-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    gap: 1rem;
-    margin-top: 2rem;
-}
-.rev-img{
-    width: 70px;
-    height: 70px;
+            <p>Cars came into global use during the 20th century, and developed economies depend on them. The year 1886
+                is regarded as the birth year of the car when German inventor Karl Benz patented his Benz
+                Patent-Motorwagen.[1][4][5] Cars became widely available in the early 20th century. One of the first
+                cars accessible to the masses was the 1908 Model T, an American car manufactured by the Ford Motor
+                Company. Cars were rapidly adopted in the US, where they replaced animal-drawn carriages and carts.[6]
+                In Europe and other parts of the world, demand for automobiles did not increase until after World War
+                II.[6]</p>
+            <a href="#" class="btn">Learn more</a>
+        </div>
+    </div>
+    </section>
+    <!--reviews-->
+    <section class="reviews" id="reviews">
+        <div class="heading">
+            <span>reviews</span>
+            <h1>Whats Our Customer Say</h1>
+        </div>
+        <div class="reviews-container">
+            <div class="box">
+                <div class="rev-img">
+                    <img src="images/image41.jpg" alt="">
 
-}
-.rev-img img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
-    border: 2px solid var(--second-color);
-}
-.reviews-container .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
-}
-.reviews-container .box h2{
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 0.5rem 0 0.5rem;
-}
-.reviews-container .box p{
-    font-style: italic;
-}
-.reviews-container .box .stars .bx{
-    color: var(--second-color);
-}
-.newsletter{
-    background: linear-gradient(to top right, #fe5b3d, #ffac38);
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-.newsletter{
-    color: #fff;
-    font-size: 1.8rem;
-}
-.newsletter .box{
-    margin-top: 1rem;
-    background: #fff;
-    border-radius: 0.5rem;
-    padding: 4px 8px;
-    width: 350px;
-    display: flex;
-    justify-content: space-between;
-}
-.newsletter .box input{
-    border: none;
-    outline: none;
-}
-.newsletter .box .btn{
-    background: #474fa0;
-    color: #fff;
-    padding: 4px 20px;
-    border-radius: 0.5rem;
-}
-.copyright{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.social a{
-    color: #444;
-    padding: 10px;
-    font-size: 21px;
-}
-/* making responsive*/
-@media (max-width: 1005px){
-    header{
-        padding: 18px 40px;
-    }
-    section{
-        padding: 50px 40px;
-    }
-}
-@media (max-width: 881px){
-    .home{
-        background-position: left;
-    }
-    .form-container form{
-       bottom: 0.2rem;
-       left: 40px; 
-    }
-}
-@media (max-width: 768px){
-    header{
-        padding: 11px 40px;
-    }
-    #menu-icon{
-        display: initial;
-    }
-    .sign-up{
-        display: none;
-    }
-    .text h21{
-        font-size: 2.5rem;
-    }
-    .home{
-        grid-template-columns: 1fr;
-    }
-    .form-container form{
-        position: unset;
-    }
-    header .navbar{
-        position: absolute;
-        top: -500px;
-        left: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        background: #fff;
-        box-shadow: 0 4px 4px rgba(0, 0 ,0 ,0.1);
-        transition: 0.2s ease;
-        text-align: left;
-    }
-    .navbar.active{
-       top: 100%;
-    }
-    .navbar a{
-        padding: 1rem;
-        border-left: 2px solid var(--main-color-color);
-        margin: 1rem;
-        display: block;
-    }
-    .navbar a:hover{
-       color: #fff;
-       background: var(--second-color);
-       border: none; 
-    }
-    .navbar a::after{
-        display: none;
-    }
-}
+                </div>
+                <h2>Someone Name</h2>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Cars came into global use during the 20th century, and developed economies depend on them. The year
+                    1886 is regarded as the birth year of the car when German inventor Karl Benz patented his Benz
+                    Patent-Motorwagen.</p>
+            </div>
+            <div class="box">
+                <div class="rev-img">
+                    <img src="images/page1.png" alt="">
+
+                </div>
+                <h2>Someone Name</h2>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Cars came into global use during the 20th century, and developed economies depend on them. The year
+                    1886 is regarded as the birth year of the car when German inventor Karl Benz patented his Benz
+                    Patent-Motorwagen.</p>
+            </div>
+            <div class="box">
+                <div class="rev-img">
+                    <img src="images/page2.png" alt="">
+
+                </div>
+                <h2>Someone Name</h2>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Cars came into global use during the 20th century, and developed economies depend on them. The year
+                    1886 is regarded as the birth year of the car when German inventor Karl Benz patented his Benz
+                    Patent-Motorwagen.</p>
+            </div>
+            <div class="box">
+                <div class="rev-img">
+                    <img src="images/page3.png" alt="">
+
+                </div>
+                <h2>Someone Name</h2>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Cars came into global use during the 20th century, and developed economies depend on them. The year
+                    1886 is regarded as the birth year of the car when German inventor Karl Benz patented his Benz
+                    Patent-Motorwagen.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!--news letter-->
+    <ssection class="newsletter">
+        <h2>Subscribe To Newsletter</h2>
+        <div class="box">
+            <input type="text" placeholder="Enter your Email..">
+            <a href="" class="btn">Subscribe</a>
+        </div>
+    </ssection>
+    <div class="copyright">
+        <p></p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </div>
+
+    <!--link to js-->
+    <script src="src.js"></script>
+</body>
+
+</html>
