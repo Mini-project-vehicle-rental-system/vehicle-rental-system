@@ -8,7 +8,6 @@
     <title>Car Rental Website</title>
     <!--link to css-->
     <link rel="stylesheet" href="style.css">
-<!--     <link rel="stylesheet" href="src.js"> -->
     <!--box icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
@@ -27,8 +26,8 @@
             <li><a href="#reviews">Reviews</a></li>
         </ul>
         <div class="header-btn">
-            <a href="register.html" class="sign-up">Sign Up</a>
-            <a href="login.html" class="sign-in">Sign In</a>
+            <a href="#" class="sign-up">Sign Up</a>
+            <a href="#" class="sign-in">Sign In</a>
         </div>
     </header>
     <!--Home-->
@@ -38,7 +37,7 @@
             <p>New Bike & Car Images - Not only the autoX gallery brings you the latest car photos and bike photos from
                 our photographers, but we have also compiled new </p>
             <div class="app-stores">
-                <img src="images/gg.png" alt="">
+                <img src="images/g.jpg" alt="">
 
             </div>
         </div>
@@ -255,41 +254,42 @@
         </div>
     </ssection>
     <div class="copyright">
-        <p></p>
+        <p>made by gautam singh</p>
         <div class="social">
             <a href="#"><i class='bx bxl-facebook'></i></a>
             <a href="#"><i class='bx bxl-twitter'></i></a>
             <a href="#"><i class='bx bxl-instagram'></i></a>
         </div>
     </div>
-
+    <!--ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!--link to js-->
     <script>
         let menu = document.querySelector('#menu-icon');
         let navbar = document.querySelector('.navbar');
 
         menu.onclick = () => {
-        menu.classList.toggle('bx-x');
-        navbar.classList.toggle('active');
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('active');
 
         }
 
-        window.onscroll = () =>{
-        menu.classList.toggle('bx-x');
-        navbar.classList.toggle('active');
+        window.onscroll = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('active');
         }
-        const sr = ScrollReveal ({
-        distance: '60px',
-        duration: 2500,
-        delay:400,
-        reset:true
+        const sr = ScrollReveal({
+            distance: '60px',
+            duration: 2500,
+            delay: 400,
+            reset: true
         })
-        sr.reveal('.text',{delay:200,origin:'top'})
-        sr.reveal('.form-container form',{delay:800,origin:'left'})
-        sr.reveal('.heading',{delay:800,origin:'top'})
-        sr.reveal('.ride-container .box',{delay:600,origin:'top'})
-        sr.reveal('.services-container .box',{delay:600,origin:'top'})
-        sr.reveal('.about-container .box',{delay:600,origin:'top'})
+        sr.reveal('.text', { delay: 200, origin: 'top' })
+        sr.reveal('.form-container form', { delay: 800, origin: 'left' })
+        sr.reveal('.heading', { delay: 800, origin: 'top' })
+        sr.reveal('.ride-container .box', { delay: 600, origin: 'top' })
+        sr.reveal('.services-container .box', { delay: 600, origin: 'top' })
+        sr.reveal('.about-container .box', { delay: 600, origin: 'top' })
     </script>
 </body>
 
