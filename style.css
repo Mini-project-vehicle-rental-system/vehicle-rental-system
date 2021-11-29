@@ -95,7 +95,7 @@ header{
     width: 100%;
     min-height:100vh;
     position: relative;
-    background-image: url('images/hector-exterior-right-front-three-quarter-3.jpeg');
+    background-image: url('images/logo2.png');
     background-repeat: no-repeat;
     background-position:  right top;
     background-size: cover;
@@ -366,7 +366,7 @@ header{
     font-size: 21px;
 }
 /* making responsive*/
-@media (max-width: 1005px){
+@media (max-width: 991px){
     header{
         padding: 18px 40px;
     }
@@ -430,5 +430,57 @@ header{
     }
     .navbar a::after{
         display: none;
+    }
+    .heading span{
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    .heading h1{
+        font-size: 1.3rem;
+    }
+    .about-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+
+    }
+    .about-img{
+        padding: 1rem;
+        order: 2 ;
+    }
+}
+@media (max-width: 563px){
+    .copyright{
+        flex-direction: column;
+    }
+    .newsletter .box{
+        width: 284;
+    }
+    .form-container{
+        padding-top: 2rem;
+    }
+}
+@media (max-width: 350px){
+    header{
+       padding: 6px 14px; 
+    }
+    .logo img{
+        width:30;
+    }
+    section{
+        padding: 50px 14px;
+    }
+    .header-btn .sign-in{
+        padding: 7px 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .text h1{
+       font-size: 2rem; 
+    }
+    .form-container{
+        padding-top: 2rem;
+    }
+    .services-container{
+        grid-template-columns: repeat(auto-fit,minmax(254px, auto));
     }
 }
